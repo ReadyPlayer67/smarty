@@ -1,3 +1,3 @@
-const str = require('@smarty-admin/utils')
-
-console.log(str)
+import {util} from "@smarty-admin/utils/src";
+//node --es-module-specifier-resolution=node test.js
+console.log(util)
