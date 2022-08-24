@@ -5,15 +5,17 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup src/index.js -o dist/rollup-bundle.js",
+    "build-min": "rollup -c"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
-    "lodash": "^4.17.21"
+    "babel-plugin-transform-es2015-arrow-functions": "^6 .22.0",
+    "lodash": "^4.17.21",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
